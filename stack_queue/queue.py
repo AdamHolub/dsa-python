@@ -25,7 +25,3 @@ av = MovingAverage(5)
 print(av.next(5))
 print(av.next(15))
 print(av.next(50))
-
-
-def generate_parentheses(n, open, close):
-    if len(n) == 2

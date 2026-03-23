@@ -46,7 +46,7 @@ class BinaryTree:
     @staticmethod
     def bfs(root):
         if root is None:
-            return
+            return []
         result = []
         queue = deque([root])
         while queue:
@@ -61,7 +61,7 @@ class BinaryTree:
     @staticmethod
     def dfs(root):
         if root is None:
-            return
+            return []
         result = []
         stack = [root]
         while stack:

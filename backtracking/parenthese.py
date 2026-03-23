@@ -23,3 +23,4 @@ def generate_parentheses(n):
     return result
 
 print(generate_parentheses(5))
+

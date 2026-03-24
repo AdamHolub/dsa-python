@@ -1,8 +1,8 @@
 def fib(n):
     
     """
-    Time Complexity: O(2^n) - Exponential time due to repeated calculations
-    Space Complexity: O(n) - Due to the call stack in recursion
+    Time Complexity: O(2^n)
+    Space Complexity: O(n)
     """
     
     if n <= 1:
@@ -12,8 +12,8 @@ def fib(n):
 def fib_memo(n, memo=None):
     
     """
-    Time Complexity: O(n) - Each Fibonacci number is calculated once
-    Space Complexity: O(n) - Due to the memoization dictionary and call stack
+    Time Complexity: O(n)
+    Space Complexity: O(n)
     """
     
     if memo is None:
@@ -29,8 +29,8 @@ def fib_memo(n, memo=None):
 def fib_tab(n):
     
     """
-    Time Complexity: O(n) - Each Fibonacci number is calculated once
-    Space Complexity: O(n) - Due to the dp array storing Fibonacci numbers up to n
+    Time Complexity: O(n)
+    Space Complexity: O(n)
     """
     
     if n <= 1:
@@ -44,8 +44,8 @@ def fib_tab(n):
 def fb(n):
     
     """
-    Time Complexity: O(n) - Each Fibonacci number is calculated once
-    Space Complexity: O(n) - Due to the list storing Fibonacci numbers up to n
+    Time Complexity: O(n)
+    Space Complexity: O(n)
     """
     
     res = [0, 1]
@@ -56,8 +56,8 @@ def fb(n):
 def fib_optimized(n):
     
     """
-    Time Complexity: O(n) - Each Fibonacci number is calculated once
-    Space Complexity: O(1) - Only a constant amount of space is used to store the last two Fibonacci numbers
+    Time Complexity: O(n)
+    Space Complexity: O(1)
     """
     
     if n <= 1:

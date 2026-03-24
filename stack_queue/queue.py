@@ -6,6 +6,12 @@ q.append(2)
 q.popleft() # 1
 
 class MovingAverage:
+
+    """
+    Time Complexity: O(1)
+    Space Complexity: O(k) k - window space
+    """
+    
     def __init__(self, size):
         self.queue = deque()
         self.size = size

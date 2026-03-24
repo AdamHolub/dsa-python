@@ -7,44 +7,69 @@ class Node:
         self.right = None
 
 class BinaryTree:
-    @staticmethod
-    def preorder(node):
-        result = []
-        def dfs(node):
-            if node is None:
-                return
-            result.append(node.value)
-            dfs(node.left)
-            dfs(node.right)
-        dfs(node)
-        return result
-        
-    @staticmethod
-    def inorder(node):
-        result = []
-        def dfs(node):
-            if node is None:
-                return
-            dfs(node.left)
-            result.append(node.value)
-            dfs(node.right)
-        dfs(node)
-        return result
-        
-    @staticmethod
-    def postorder(node):
-        result = []
-        def dfs(node):
-            if node is None:
-                return
-            dfs(node.left)
-            dfs(node.right)
-            result.append(node.value)
-        dfs(node)
-        return result
     
     @staticmethod
+    def preorder(node):
+        
+        """
+        Time Complexity: O(n) n - number of nodes in the tree
+        Space Complexity: O(h) h - height of the tree
+        """
+        
+        result = []
+        def dfs(node):
+            if node is None:
+                return
+            result.append(node.value)
+            dfs(node.left)
+            dfs(node.right)
+        dfs(node)
+        return result
+           
+    @staticmethod
+    def inorder(node):
+        
+        """
+        Time Complexity: O(n) n - number of nodes in the tree
+        Space Complexity: O(h) h - height of the tree
+        """
+        
+        result = []
+        def dfs(node):
+            if node is None:
+                return
+            dfs(node.left)
+            result.append(node.value)
+            dfs(node.right)
+        dfs(node)
+        return result
+         
+    @staticmethod
+    def postorder(node):
+        
+        """
+        Time Complexity: O(n) n - number of nodes in the tree
+        Space Complexity: O(h) h - height of the tree
+        """
+        
+        result = []
+        def dfs(node):
+            if node is None:
+                return
+            dfs(node.left)
+            dfs(node.right)
+            result.append(node.value)
+        dfs(node)
+        return result
+
+    @staticmethod
     def bfs(root):
+        
+        """
+        Time Complexity: O(n) n - number of nodes in the tree
+        Space Complexity: O(w) w - max width of the tree
+        """
+        
         if root is None:
             return []
         result = []
@@ -60,6 +85,12 @@ class BinaryTree:
 
     @staticmethod
     def dfs(root):
+        
+        """
+        Time Complexity: O(n) n - number of nodes in the tree
+        Space Complexity: O(h) h - height of the tree
+        """
+        
         if root is None:
             return []
         result = []
@@ -75,6 +106,12 @@ class BinaryTree:
 
     @staticmethod
     def height(node):
+        
+        """
+        Time Complexity: O(n) n - number of nodes in the tree
+        Space Complexity: O(h) h - height of the tree
+        """
+        
         if node is None:
             return 0
         left_height = BinaryTree.height(node.left)

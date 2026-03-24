@@ -26,6 +26,12 @@ print(s.pop())
 print(s.peek())
     
 def is_valid(s):
+    
+    """
+    Time Complexity: O(n)
+    Space Complexity: O(n)
+    """
+    
     stack = []
     mapping = {
         ")": "(",
@@ -48,6 +54,12 @@ print(is_valid("({{)")) # False
 
 
 class MinStack:
+    
+    """
+    Time Complexity: O(n)
+    Space Complexity: O(n)
+    """
+    
     def __init__(self):
         self.stack = []
         self.min_stack = []

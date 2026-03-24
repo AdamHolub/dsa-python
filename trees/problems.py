@@ -1,8 +1,15 @@
 from binaryTree import Node
 
 class BinaryTree:
+    
     @staticmethod
     def find_value(node, target):
+        
+        """
+        Time Complexity: O(n) n - number of nodes in the tree
+        Space Complexity: O(h) h - height of the tree
+        """
+        
         if node is None:
             return False
         if node.value == target:
@@ -11,12 +18,24 @@ class BinaryTree:
     
     @staticmethod
     def tree_sum(node):
+        
+        """
+        Time Complexity: O(n) n - number of nodes in the tree
+        Space Complexity: O(h) h - height of the tree
+        """
+        
         if node is None:
             return 0
         return (node.value + BinaryTree.tree_sum(node.left) + BinaryTree.tree_sum(node.right))
-
+    
     @staticmethod
     def count_leaves(node):
+        
+        """
+        Time Complexity: O(n) n - number of nodes in the tree
+        Space Complexity: O(h) h - height of the tree
+        """
+        
         if node is None:
             return 0
         if node.left is None and node.right is None:

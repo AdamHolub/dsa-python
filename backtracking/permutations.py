@@ -1,4 +1,10 @@
 def permutations(nums):
+    
+    """
+    Time Complexity: O(n!)
+    Space Complexity: O(n)
+    """
+    
     result = []
     
     def backtrack(path, used):
@@ -22,4 +28,5 @@ def permutations(nums):
     return result
 
 nums = [1,6,7,8]
+
 print(permutations(nums))

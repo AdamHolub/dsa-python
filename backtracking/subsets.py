@@ -1,4 +1,10 @@
 def subsets(nums):
+    
+    """
+    Time Complexity: O(n * 2^n)
+    Space Complexity: O(n)
+    """
+    
     result = []
     
     def backtrack(start, path):
@@ -13,5 +19,6 @@ def subsets(nums):
     return result
 
 
-nums = [1,4,6,7,2,8,9,4,10]
+nums = [1,4,6,4,10]
+
 print(subsets(nums))

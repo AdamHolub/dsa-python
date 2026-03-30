@@ -55,12 +55,12 @@ dsa-python/
 │
 ├── trees/
 │ ├── binary_tree.py
-│ └── problems.py
+│ └── tree_algorithms.py
 │
 ├── dp/
 │ ├── fibonacci.py
 │ ├── climbing_stairs.py
-│ └── house_robber.py
+│ └── house_robbery.py
 │
 ├── stack_queue/
 │ ├── stack.py
@@ -83,12 +83,12 @@ dsa-python/
 
 ### 🌳 Trees 
 - [Binary Tree Implementation](trees/binary_tree.py)
-- [Tree Problems (sum, search, path sum, invert, etc.)](trees/problems.py)
+- [Tree Algorithms (sum, search, path sum, invert, etc.)](trees/tree_algorithms.py)
 
 ### 🧠 Dynamic Programming
 - [Fibonacci](dp/fibonacci.py)
 - [Climbing Stairs](dp/climbing_stairs.py)
-- [House Robber](dp/house_robber.py)
+- [House Robber](dp/house_robbery.py)
 
 ### 🧱 Stack & Queue 
 - [Stack Implementation + Valid Parentheses + MinStack](stack_queue/stack.py)
